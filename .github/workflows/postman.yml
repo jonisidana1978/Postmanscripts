@@ -23,4 +23,4 @@ jobs:
 
       - name: Run Collection
         run: |
-          newman run PSA_Maps.postman_collection.json
+          newman run PSA_Maps Copy.postman_collection.json
