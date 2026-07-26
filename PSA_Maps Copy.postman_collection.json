@@ -1,0 +1,54 @@
+{
+  "info": {
+    "_postman_id": "ba7c4323-a1f1-4ac0-a426-de9d1c6a05e1",
+    "name": "PSA_Maps Copy",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "56865698"
+  },
+  "item": [
+    {
+      "name": "AddPlace",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"location\":{\r\n        \"lat\":-3.383494,\r\n        \"lng\":33.427362\r\n    },\r\n    \"accuracy\":5100,\r\n    \"name\": \"pallav house sector 7 \",\r\n    \"phone number\": \"(+91) 9900990099\",\r\n    \"address\": \"3rd floow\",\r\n    \"types\":[\r\n        \"shoe park\",\r\n        \"shop\"\r\n    ],\r\n    \"website\":\"httpp://google.com\",\r\n    \"language\": \"French-IN\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123",
+          "protocol": "https",
+          "host": [
+            "rahulshettyacademy",
+            "com"
+          ],
+          "path": [
+            "maps",
+            "api",
+            "place",
+            "add",
+            "json"
+          ],
+          "query": [
+            {
+              "key": "key",
+              "value": "qaclick123"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
