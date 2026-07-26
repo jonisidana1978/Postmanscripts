@@ -1,0 +1,191 @@
+{
+  "info": {
+    "_postman_id": "165230ce-dd67-4d8c-8782-44092d333e3d",
+    "name": "PSA_Maps",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "56865698"
+  },
+  "item": [
+    {
+      "name": "AddPlace",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"location\":{\r\n        \"lat\":-3.383494,\r\n        \"lng\":33.427362\r\n    },\r\n    \"accuracy\":5100,\r\n    \"name\": \"pallav house\",\r\n    \"phone number\": \"(+91) 9900990099\",\r\n    \"address\": \"29 street ,side layout, cohen 01\",\r\n    \"types\":[\r\n        \"shoe park\",\r\n        \"shop\"\r\n    ],\r\n    \"website\":\"httpp://google.com\",\r\n    \"language\": \"French-IN\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123",
+          "protocol": "https",
+          "host": [
+            "rahulshettyacademy",
+            "com"
+          ],
+          "path": [
+            "maps",
+            "api",
+            "place",
+            "add",
+            "json"
+          ],
+          "query": [
+            {
+              "key": "key",
+              "value": "qaclick123"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "getPlace",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=8e5197fe698ce68ded26756b15f3a04b",
+          "protocol": "https",
+          "host": [
+            "rahulshettyacademy",
+            "com"
+          ],
+          "path": [
+            "maps",
+            "api",
+            "place",
+            "get",
+            "json"
+          ],
+          "query": [
+            {
+              "key": "key",
+              "value": "qaclick123"
+            },
+            {
+              "key": "place_id",
+              "value": "8e5197fe698ce68ded26756b15f3a04b"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "deletePlace",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"place_id\": \"1c93a9dbf6c3667fd7d81935aef62781\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://rahulshettyacademy.com/maps/api/place/delete/json?key=qaclick123",
+          "protocol": "https",
+          "host": [
+            "rahulshettyacademy",
+            "com"
+          ],
+          "path": [
+            "maps",
+            "api",
+            "place",
+            "delete",
+            "json"
+          ],
+          "query": [
+            {
+              "key": "key",
+              "value": "qaclick123"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "UpdatePlace(put)",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n \"place_id\": \"8e5197fe698ce68ded26756b15f3a04b\",\r\n \"address\": \"29 street ,side layout, cohen sector 7\",\r\n \"key\": \"qaclick123\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://rahulshettyacademy.com/maps/api/place/update/json?place_id=b52b16ad403a0140ed4af0d08c3d0b9c&Key=qaclick123",
+          "protocol": "https",
+          "host": [
+            "rahulshettyacademy",
+            "com"
+          ],
+          "path": [
+            "maps",
+            "api",
+            "place",
+            "update",
+            "json"
+          ],
+          "query": [
+            {
+              "key": "place_id",
+              "value": "b52b16ad403a0140ed4af0d08c3d0b9c"
+            },
+            {
+              "key": "Key",
+              "value": "qaclick123"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
